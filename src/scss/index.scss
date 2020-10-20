@@ -1,3 +1,71 @@
+html,
 body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #010101;
+  color: #989898;
+}
+
+.main {
+  background-color: #989898;
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  .image-wrap {
     margin: 0;
+    padding: 0;
+  }
+  .image-item {
+    width: 33.33333333%;
+    display: inline-block;
+    animation-name: item;
+    animation-duration: 0.4s;
+    cursor: pointer;
+    &:hover {
+      img {
+        transform: scale(1.05);
+      }
+    }
+    img {
+      vertical-align: middle;
+      height: 100%;
+      width: 100%;
+      transition: 0.3s;
+    }
+  }
+  .post-mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .post {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background: white;
+    }
+  }
+}
+
+.footer {
+  height: 50px;
+}
+
+@keyframes item {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 }

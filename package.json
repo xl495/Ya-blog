@@ -26,6 +26,7 @@
     "webpack-cli": "^4.1.0"
   },
   "dependencies": {
+    "axios": "^0.20.0",
     "css-loader": "^5.0.0",
     "mini-css-extract-plugin": "^1.0.0",
     "resolve-url-loader": "^3.1.1"

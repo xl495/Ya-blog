@@ -7,8 +7,7 @@
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title><?php $this->options->title(); ?></title>
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('grid.css'); ?>">
-    <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
+    <link rel="stylesheet" href="<?php $this->options->themeUrl('./dist/main.css'); ?>">
     <?php $this->header(); ?>
 </head>
 <body>
